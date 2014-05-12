@@ -5,3 +5,5 @@ df$Time <- strptime(df$Time, '%H:%M:%S')
 plot(df$Global_active_power / 1000,
      type='l',
      ylab='Global active power (kilowatt)')
+dev.copy(png, file='plot2.png')
+dev.off()
